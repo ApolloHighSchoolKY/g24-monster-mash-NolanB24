@@ -13,11 +13,23 @@
 
 public class Cow extends Animal
 {
-
-    public Cow()
-    {
-
+    private double milkProduced;
+    public Cow(){
+        super("Moo");
     }
-
+   /*  public Cow(String animal)
+    {
+        super(animal);
+        age = 0; 
+    }
+    
+    public String speak(){
+        return getSpecies() + " MOOOOOOO";
+    }
+    public String toString()
+    {
+        return "";
+    }
+*/
 
 }

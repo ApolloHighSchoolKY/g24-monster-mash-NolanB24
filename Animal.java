@@ -16,22 +16,38 @@ public class Animal
 	private int age;
 	private boolean alive;
 	private String sound;
-
+	//private String myAnimal;
 	    /**
 	     * Create a new animal with age zero (a new born).
 	     */
 	    public Animal()
 	    {
-
+			//myAnimal = "Animal";
+			this("sound");
 	    }
+		public Animal(String sound){
+			age = 0; 
+			alive = true;
+			this.sound = sound;
+		}
 
+		/*public Animal(String animal){
+			myAnimal  = animal;
+		}*/
+
+		public String getSpecies(){
+			return myAnimal;
+		}
+
+		//Animal cow = new Cow("Cow");
 	    /**
 	    * Check whether the animal is alive or not.
 	    * @return True if the animal is still alive.
 	    */
+	   
         public boolean isAlive()
     	{
-
+			return alive;
     	}
 
      	/**
@@ -39,7 +55,7 @@ public class Animal
      	*/
      	public void kill()
      	{
-
+			alive = false;
      	}
 
      	/**
@@ -48,7 +64,7 @@ public class Animal
      	*/
      	public String speak()
      	{
-     		return "";
+     		return "" + sound;
      	}
 
      	/**
@@ -58,6 +74,10 @@ public class Animal
      	*/
      	public String toString()
      	{
-     		return "";
+			if(alive)
+			{
+				return "Age" + age + "    -" + sound;
+			}
+     		return "The animal lived to be age" + age + " years old. RIP";
      	}
 }

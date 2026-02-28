@@ -14,16 +14,25 @@ public class MonsterMash{
 
     System.out.println(sally);
 
-     System.out.println(sally.kill());
-     System.out.println(((Witch)sally).fly());
+    System.out.println(sally.kill());
+    System.out.println(((Witch)sally).fly());
 
      //Declare a monster
      //Declare your Type of Monster
      //Bonus Challenge: Add an instance field
-     Monster drogon = new Dragon("drogon");
-     System.out.println(drogon);
-     System.out.println(drogon.kill());
-     System.out.println(((Dragon)drogon).pillage());
+    Monster drogon = new Dragon("drogon");
+    System.out.println(drogon);
+    System.out.println(drogon.kill());
+    System.out.println(((Dragon)drogon).pillage());
+    Skeleton skelly = new Skeleton();
+    System.out.print(skelly);
+
+    skelly = new Skeleton("Giant Skeleton");
+
+    System.out.println(skelly);
+
+    System.out.println(skelly.toString());
+     
 
      
   }
