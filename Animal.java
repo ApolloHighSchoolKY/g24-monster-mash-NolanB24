@@ -30,10 +30,14 @@ public class Animal
 			alive = true;
 			this.sound = sound;
 		}
+		public String eat(){
+			age++;
+			return " The animal at.";
+		}
 
-		/*public Animal(String animal){
-			myAnimal  = animal;
-		}*/
+		public int getAge(){
+			return age;
+		}
 
 		public String getSpecies(){
 			return myAnimal;

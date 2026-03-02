@@ -16,20 +16,28 @@ public class Cow extends Animal
     private double milkProduced;
     public Cow(){
         super("Moo");
+        milkProduced = 0;
     }
-   /*  public Cow(String animal)
-    {
-        super(animal);
-        age = 0; 
-    }
-    
-    public String speak(){
-        return getSpecies() + " MOOOOOOO";
-    }
+    public String speak()
+     	{
+     		return "The cow saws moooooo";
+     	}
+		public String eat(){
+			super.eat();
+			milkProduced+=10;
+			return "The cow ate and produced milk.";
+		}
+		public String produceMilk(int x){
+			milkProduced += x;
+			return "The cow produced" + x + " more milk.";
+		}
     public String toString()
-    {
-        return "";
-    }
-*/
+     	{
+			if(super.isAlive())
+			{
+				return "The cow is " + super.getAge() + " years old";
+			}
+     		return "The animal lived to be age" + super.getAge() + " years old. And produced" + milkProduced;
+   
 
 }
